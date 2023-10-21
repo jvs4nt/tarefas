@@ -327,6 +327,7 @@ while (e != 2):
         case 3:
             clear()
             print(f"Boa escolha {nome}! Segue abaixo nossas redes sociais:")
+            print("")
             print("Intagram: @salesforcebrasil")
             print("LinkedIn: SalesforceBrasil")
             print("")
