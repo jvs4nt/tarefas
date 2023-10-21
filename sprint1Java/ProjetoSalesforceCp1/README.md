@@ -34,14 +34,13 @@ O projeto Salesforce tem como finalidade criar uma aplicação que demonstre a c
 
 ![Saída de dados](./assets/ss2-java.png)
 
+## Diagrama de Classes:
 
+![Astah](./assets/astah-ss.png)
 
 ## Desenvolvedores:
 
 - Willian Daniel Olivira Dantas
 - João Vitor de Santana dos Santos
-- Ryan Azanha
+- Ryan Azanha da Silva
 
-## Diagrama de Classes:
-
-![Astah](./assets/astah-ss.png)
