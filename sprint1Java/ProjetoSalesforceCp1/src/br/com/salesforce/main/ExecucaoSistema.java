@@ -16,7 +16,7 @@ public class ExecucaoSistema {
 		Cliente objCliente = new Cliente(
 				JOptionPane.showInputDialog("Digite o nome"),
 				JOptionPane.showInputDialog("Digite o nome da empresa"),
-				JOptionPane.showInputDialog("Digite a data do cadastro em formto dd/dd/yyyy")
+				JOptionPane.showInputDialog("Digite a data do cadastro em formto dd/mm/yyyy")
 				);
 		
 		//(String logradouro, int numero, String cep, String bairro, String cidade)
@@ -27,6 +27,7 @@ public class ExecucaoSistema {
 				JOptionPane.showInputDialog("Digite o bairro"),
 				JOptionPane.showInputDialog("Digite a cidade")
 				);
+		objCliente.setEndereco(objEndereco);
 		
 		//(String nomeContato, String email, String numeroTelefone, String instagram)
 		Contato objContato = new Contato (
@@ -35,12 +36,13 @@ public class ExecucaoSistema {
 				JOptionPane.showInputDialog("Digite um número de telefone para contato"),
 				JOptionPane.showInputDialog("Digite o instagram comercial")
 				);
+		objCliente.setContato(objContato);
 		
 		//(String nomeCampanha, String dataInicio, String dataFim, double orçamento,
 		//String objetivoCampanha)
 		CampanhaMarketing objCampanhaMarketing = new CampanhaMarketing(
 				JOptionPane.showInputDialog("Digite o nome da Campanha"),
-				JOptionPane.showInputDialog("Digite a dat de inicio da campanha (dd/mm/yyyy)"),
+				JOptionPane.showInputDialog("Digite a data de inicio da campanha (dd/mm/yyyy)"),
 				JOptionPane.showInputDialog("Digite a data de fim da campanha (dd/mm/yyyy)"),
 				Double.parseDouble(JOptionPane.showInputDialog("Digite o valor do orçamento da campanha")),
 				JOptionPane.showInputDialog("Digite o objetivo da campanha"));
@@ -56,7 +58,7 @@ public class ExecucaoSistema {
 		
 		
 		System.out.println("\nINFORMAÇÕES DO CLIENTE: " +
-		"\n\nNome: " + objCliente.getNome()+
+		"\nNome: " + objCliente.getNome()+
 		"\nNome da empresa: " + objCliente.getEmpresa()+
 		"\nData do cadastro: " + objCliente.getDtCadastro()+
 		"\n\nINFORMAÇÕES DE ENDEREÇO: "	+
@@ -65,7 +67,7 @@ public class ExecucaoSistema {
 		"\nCEP: " + objCliente.getEndereco().getCep()+
 		"\nBairro: " + objCliente.getEndereco().getBairro()+
 		"Cidade: " + objCliente.getEndereco().getCidade()+
-		"INFORMAÇÕES DE CONTATO: " +
+		"\nINFORMAÇÕES DE CONTATO: " +
 		"\n\nNome de contato: " + objCliente.getContato().getNomeContato()+
 		"\nEmail: " + objCliente.getContato().getEmail()+
 		"\nNúmero para contato: " + objCliente.getContato().getNumeroTelefone()+
