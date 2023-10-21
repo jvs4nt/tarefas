@@ -261,6 +261,7 @@ while (e != 2):
                         clear()
                         sys.exit()
                 case 3:
+                    clear()
                     print("Para entrar em contato conosco via E-mail, basta enviar sua mensagem com seu nome e sua dúvida no endereço abaixo:")
                     print("")
                     print("salesforce@atendimento.com")
@@ -282,6 +283,30 @@ while (e != 2):
                     if (i == 2):
                         clear()
                         sys.exit()
+                case 4:
+                    clear()
+                    print("Para entrar em contato conosco via Instagram, basta entrar no nosso perfil abaixo e mandar sua dúvida no direct!")
+                    print("")
+                    print("@salesforcebrasil")
+                    print("")
+                    print("")
+                    input("Pressione ENTER para continuar...")
+
+                    clear()
+                    print(f"Obrigado pelo acesso {nome}! Você deseja voltar ao menu inicial ou finalizar o programa?")
+                    print("")
+                    print("1 - Voltar ao menu inicial")
+                    print("2 - Encerrar o programa.")
+                    print("")
+
+                    i = int(input("Digite a opção desejada: "))
+
+                    if (i == 1):
+                        clear()
+                    if (i == 2):
+                        clear()
+                        sys.exit()
+                    
 
 
 
