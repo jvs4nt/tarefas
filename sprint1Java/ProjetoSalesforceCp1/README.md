@@ -42,10 +42,6 @@ O projeto Salesforce tem como finalidade criar uma aplicação que demonstre a c
 - João Vitor de Santana dos Santos
 - Ryan Azanha
 
-## Referências:
+## Diagrama de Classes:
 
-- [Link para recursos ou documentação que você usou, se aplicável]
-
-## Informações Adicionais:
-
-- Qualquer informação relevante sobre o projeto.
+![Astah](./assets/astah-ss.png)
