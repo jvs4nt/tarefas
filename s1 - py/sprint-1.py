@@ -327,6 +327,7 @@ while (e != 2):
         case 3:
             clear()
             print(f"Boa escolha {nome}! Segue abaixo nossas redes sociais:")
+            print("")
             print("Intagram: @salesforcebrasil")
             print("LinkedIn: SalesforceBrasil")
             print("")
@@ -360,9 +361,25 @@ while (e != 2):
             print("crescimento dos negócios, estabelecendo uma conexão duradoura entre empresas e clientes.")
             print("Uma maneira eficaz de recompensar e manter a lealdade em um mundo digital.")
             print("")
-
+            print("")
             input("Pressione ENTER para continuar...")
 
+            clear()
+
+            print("1 - Participar")
+            print("2 - Não participar")
+            print("")
+            programa = int(input("Digite a opção desejada: "))
+
+            match programa:
+                case 1:
+                    clear()
+                    print(f"Boa escolha {nome}! Para realizar o seu cadastro no programa, basta entrar em contato conosco e nos enviar seus dados :D")
+                    print("Para facilitar temos diversas opções de contato, todas especificadas aqui no nosso app. Estamos te aguardando, até mais!")
+                    print("")
+                    input("Pressione ENTER para continuar...")
+                case 2:
+                    clear()
             clear()
             print(f"Obrigado pelo acesso {nome}! Você deseja voltar ao menu inicial ou finalizar o programa?")
             print("")
