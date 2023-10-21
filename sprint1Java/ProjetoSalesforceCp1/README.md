@@ -30,7 +30,10 @@ O projeto Salesforce tem como finalidade criar uma aplicação que demonstre a c
 
 ## Capturas de Tela:
 
-![Texto Alternativo](URL_da_Sua_Captura_de_Tela)
+![Entrada de dados](./assets/ss1-java.png)
+
+![Saída de dados](./assets/ss2-java.png)
+
 
 
 ## Desenvolvedores:

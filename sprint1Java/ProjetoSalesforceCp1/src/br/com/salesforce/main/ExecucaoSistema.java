@@ -16,7 +16,7 @@ public class ExecucaoSistema {
 		Cliente objCliente = new Cliente(
 				JOptionPane.showInputDialog("Digite o nome"),
 				JOptionPane.showInputDialog("Digite o nome da empresa"),
-				JOptionPane.showInputDialog("Digite a data do cadastro em formto dd/mm/yyyy")
+				JOptionPane.showInputDialog("Digite a data do cadastro em formato dd/mm/yyyy")
 				);
 		
 		//(String logradouro, int numero, String cep, String bairro, String cidade)
