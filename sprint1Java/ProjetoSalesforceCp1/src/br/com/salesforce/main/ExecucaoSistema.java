@@ -66,9 +66,9 @@ public class ExecucaoSistema {
 		"\nNúmero: " + objCliente.getEndereco().getNumero()+
 		"\nCEP: " + objCliente.getEndereco().getCep()+
 		"\nBairro: " + objCliente.getEndereco().getBairro()+
-		"Cidade: " + objCliente.getEndereco().getCidade()+
-		"\nINFORMAÇÕES DE CONTATO: " +
-		"\n\nNome de contato: " + objCliente.getContato().getNomeContato()+
+		"\nCidade: " + objCliente.getEndereco().getCidade()+
+		"\n\nINFORMAÇÕES DE CONTATO: " +
+		"\nNome de contato: " + objCliente.getContato().getNomeContato()+
 		"\nEmail: " + objCliente.getContato().getEmail()+
 		"\nNúmero para contato: " + objCliente.getContato().getNumeroTelefone()+
 		"\nInstagram: " + objCliente.getContato().getInstagram()+
