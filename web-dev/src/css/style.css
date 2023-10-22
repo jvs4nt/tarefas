@@ -2,8 +2,13 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #fff;
+    background-color: #f3f3f3;
 }
+
+/* ========
+    HEADER
+   ======== */
+
 header {
     display: flex;
     align-items: center;
@@ -11,15 +16,16 @@ header {
     color: #1b1c1c;
     justify-content: space-between;
     border-bottom: 1px solid #cccccc;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    margin-left: 10px;
 }
 
 .logo {
     height: 60px;
     padding: 10px;
-}
-
-header h1 {
-    margin-left: 10px;
 }
 
 nav {
@@ -35,14 +41,22 @@ nav a {
 }
 
 nav a:hover {
-    font-weight: bold;
+    text-decoration: underline;
 }
+
+/* ========
+    HEADER END
+   ======== */
+
+/* ========
+    GENERAL
+   ======== */
 
 section {
     background-color: #ffffff;
     margin-top: 10px;
     padding: 20px;
-    min-height: 70vh;
+    
 }
 
 section p {
@@ -54,24 +68,72 @@ h2 {
     color: #000;
 }
 
-.box-equipe {
+/* ========
+    GENERAL END
+   ======== */
+
+/* ========
+    PAG-INICIAL
+   ======== */
+
+.main-section {
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.main-div {
+    display: flex;
+    min-height: 72vh;
+    border-bottom: 1px solid #ccc;
+    padding: 20px;
+}
+
+.text-main {
+    max-width: 50%;
+}
+
+.div-jumbo {
+    min-width: 50%;
+    display: flex;
+    justify-content: center;
     
+}
+
+.jumbo {
+    height: 450px;
+    margin-left: 60px;
+}
+
+.main-title {
+    font-size: 50px;
+}
+
+/* ========
+    PAG-INICIAL END
+   ======== */
+
+/* ========
+    EQUIPE
+   ======== */
+
+.box-equipe {
+    min-height: 80vh;
 }
 
 .equipe {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid #cccccc;
-    border-radius: 10px;
-    margin: 10px;
+    border-bottom: 1px solid #cccccc;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    /* margin: 10px; */
     min-width: 30%;
-    background-color: rgb(240, 244, 247);
+    background-color: rgb(255, 255, 255);
 }
 
 .equipe-screen {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 
@@ -81,3 +143,7 @@ h2 {
     border: 2px solid #fff;
     border-radius: 100%;
 }
+
+/* ========
+    EQUIPE END
+   ======== */
