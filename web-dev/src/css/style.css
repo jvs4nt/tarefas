@@ -1,30 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans&family=Roboto&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
 }
 header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    color: #1b1c1c;
+    justify-content: space-between;
+    border-bottom: 1px solid #cccccc;
+}
+
+.logo {
+    height: 60px;
     padding: 10px;
 }
+
+header h1 {
+    margin-left: 10px;
+}
+
 nav {
-    background-color: #555;
-    color: #fff;
+    background-color: #fff;
     padding: 10px;
 }
 nav a {
-    color: #fff;
+    color: #1b1c1c;
     text-decoration: none;
     margin: 0 10px;
+    font-size: 20px;
+    transition: all;
 }
-h1 {
-    text-align: center;
+
+nav a:hover {
+    font-weight: bold;
 }
+
 section {
-    margin: 20px;
+    background-color: #ffffff;
+    margin-top: 10px;
     padding: 20px;
-    border: 1px solid #ddd;
+    min-height: 70vh;
 }
+
+section p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+}
+
 h2 {
-    color: #333;
+    color: #000;
+}
+
+.box-equipe {
+    
+}
+
+.equipe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    margin: 10px;
+    min-width: 30%;
+    background-color: rgb(240, 244, 247);
+}
+
+.equipe-screen {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.imagem img {
+    width: 100px;
+    margin-top: 10px;
+    border: 2px solid #fff;
+    border-radius: 100%;
 }
