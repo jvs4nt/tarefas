@@ -27,11 +27,13 @@ header h1 {
 .logo {
     height: 60px;
     padding: 10px;
+    margin-left: 5%;
 }
 
 nav {
     background-color: #fff;
     padding: 10px;
+    margin-right: 5%;
 }
 nav a {
     color: #1b1c1c;
