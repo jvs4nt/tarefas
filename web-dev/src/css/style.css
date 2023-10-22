@@ -212,6 +212,15 @@ CHATBOT END
     min-width: 30%;
     background-image: url(./../img/main-bg2.jpg);
     background-position: center;
+    transition: 0.2s;
+}
+
+.equipe:hover {
+    
+    min-width: 32%;
+
+
+
 }
 
 .equipe-screen {
