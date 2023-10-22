@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playpen+Sans&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap');
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -16,7 +17,7 @@ header {
     color: #1b1c1c;
     justify-content: space-between;
     border-bottom: 1px solid #cccccc;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 5px 10px rgba(0, 104, 231, 0.3);
 }
 
 header h1 {
@@ -79,17 +80,26 @@ h2 {
 .main-section {
     display: flex;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    background-image: url(./../img/main-bg2.jpg);
+    background-position: center;
 }
 
 .main-div {
     display: flex;
-    min-height: 72vh;
-    border-bottom: 1px solid #ccc;
+    min-height: 150vh;
     padding: 20px;
 }
 
+.line1 {
+    display: flex;
+}
+
 .text-main {
-    max-width: 50%;
+    background-color: #fff;
+    max-height: 55vh;
+    padding: 30px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .div-jumbo {
@@ -100,12 +110,18 @@ h2 {
 }
 
 .jumbo {
-    height: 450px;
+    height: 500px;
     margin-left: 60px;
 }
 
 .main-title {
+    font-family: 'Playpen Sans', cursive;
     font-size: 50px;
+}
+
+.main-p {
+    font-family: 'Playpen Sans', cursive;
+    color: #000;
 }
 
 /* ========
@@ -138,7 +154,7 @@ h2 {
     flex-direction: column;
     align-items: center;
     border-bottom: 1px solid #cccccc;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 5px 10px rgba(0, 104, 231, 0.3);
     /* margin: 10px; */
     min-width: 30%;
     background-color: rgb(255, 255, 255);
