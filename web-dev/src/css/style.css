@@ -31,6 +31,9 @@ header h1 {
     padding: 10px;
     margin-left: 5%;
 }
+.logo:hover {
+    cursor: pointer;
+}
 
 nav {
     background-color: #fff;
