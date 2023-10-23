@@ -110,7 +110,7 @@ h2 {
 .line2 {
     display: flex;
     margin-left: 2.5%;
-    margin-top: 100px;
+    margin-top: 200px;
     height: 60vh;
 }
 
@@ -174,6 +174,23 @@ h2 {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
+.organograma-div {
+    display: flex;
+    min-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.organograma {
+    width: 1000px;
+}
+
+.organograma-box {
+    width: 100%;
+    justify-items: left;
+}
+
 /* ========
     ORGANOGRAMA END
    ======== */
@@ -185,7 +202,7 @@ CHATBOT END
 .main-div-chatbot {
     display: flex;
     flex-direction: column;
-    min-height: 72vh;
+    min-height: 74vh;
     padding: 20px;
 }
 
