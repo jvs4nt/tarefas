@@ -2,9 +2,13 @@ import os
 import sys
 
 def clear():
-    os.system("clear")
+    os.system("cls")
 
 def login():
+    clear()
+    print("LOGIN")
+    print("---------")
+    print("")
     user = input("Usuario: ")
     password = input("Senha: ")
 
@@ -15,7 +19,8 @@ def login():
         sys.exit()
 
 def cadastro():
-    new_user = input("Digite seu user_cadastrado de usuário: ")
+    clear()
+    new_user = input("Digite seu nome de usuário: ")
     new_password = input("Digite sua senha: ")
 
     global user_cadastrado, senha_cadastrada
@@ -23,32 +28,37 @@ def cadastro():
     senha_cadastrada = new_password
 
     print("Cadastro bem-sucedido!")
+    print("")
+    input("Pressione ENTER para continuar...")
+    login()
 
-
-e = 1
 
 user_cadastrado = ''
 senha_cadastrada = ''
 
-clear()
+while True:
+    print("")
+    print(f"Olá! Seja bem-vindo(a) ao sistema de instruções da SALESFORCE.")
+    print("")
+    input("Pressione ENTER para continuar...")
+    clear()
 
-print(f"Olá {user_cadastrado}! Seja bem-vindo(a) ao sistema de instruções da SALESFORCE.")
-print("")
-input("Pressione ENTER para continuar...")
+    print('1 - Fazer Login')
+    print('2 - Fazer Cadastro')
+    print("")
+    op = input('Escolha uma opção (1 ou 2): ')
 
-clear()
+    if op == '1':
+        login()
+    elif op == '2':
+        cadastro()
+    else:
+        print('Opção inválida.')
+        sys.exit()
 
-print("Já possui login aqui? Entre em sua conta! Caso não tenha, realize seu cadastro.")
-print("")
-
-print("1 - Login")
-print("2 - Cadastro")
-print("")
-
-op = int(input("Digite a opção desejada: "))
+    clear()
 
 
-while (e != 2):
     print("Escolha uma das opções para seguir: ")
     print("1 - Informações sobre nossos produtos")
     print("2 - Entre em contato conosco")
