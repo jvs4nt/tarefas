@@ -1,7 +1,11 @@
 package br.com.salesforce.main;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.swing.JOptionPane;
 
+import br.com.salesforce.beans.Cadastro;
 import br.com.salesforce.beans.CampanhaMarketing;
 import br.com.salesforce.beans.Cliente;
 import br.com.salesforce.beans.Contato;
@@ -26,6 +30,31 @@ public class ExecucaoSistema {
 	
 	
 	public static void main(String[] args) {
+		
+		//instanciar Cadastro 
+		
+		List<Cadastro> listaCadastros = new ArrayList<Cadastro>();
+		
+		Cadastro objCadastro;
+		
+		//Entrada "Do"
+		
+		do {
+			objCadastro = new Cadastro();
+			objCadastro.setPrimeiroNome(texto("Primeiro nome"));
+			objCadastro.setSobreNome(texto("Sobrenome"));
+			objCadastro.setEmail(texto("Melhor Email"));
+			objCadastro.setSenha(texto("Senha"));
+			
+			listaCadastros.add(objCadastro);
+			}
+			while(JOptionPane.showConfirmDialog(null, "Adicionar mais um cadastro?" , 
+					"Cadastrando parceiros", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE) == 0);
+		
+		
+		
+		
+		
 		
 		//(String nome, String empresa, String dtCadastro)
 		Cliente objCliente = new Cliente(
@@ -64,12 +93,12 @@ public class ExecucaoSistema {
 		
 		//(String nomeProduto, int idProduto, String descricao, double preco, String categoria)
 		Produto objProduto = new Produto(
-				JOptionPane.showInputDialog("Digite o nome do produto"),
-				JOptionPane.showInputDialog("Digite a marca do produto"),
-				Integer.parseInt(JOptionPane.showInputDialog("Digite o id do produto")),
-				JOptionPane.showInputDialog("Digite a descrição do produto"),
-				Double.parseDouble(JOptionPane.showInputDialog("Digite o preço do produto")),
-				JOptionPane.showInputDialog("Digite a categoria do produto"));
+				texto("Digite o nome do produto"),
+				texto("Digite a marca do produto"),
+				inteiro("Digite o id do produto"),
+				texto("Digite a descrição do produto"),
+				real("Digite o preço do produto"),
+				texto("Digite a categoria do produto"));
 		
 		
 		System.out.println("\nINFORMAÇÕES DO CLIENTE: " +
@@ -99,7 +128,11 @@ public class ExecucaoSistema {
 		"\nId do produto: " + objProduto.getIdProduto()+
 		"\nDescrição: " + objProduto.getDescricao()+
 		"\nValor: " + objProduto.getPreco()+
-		"\nCategoria: " + objProduto.getCategoria()
+		"\nCategoria: " + objProduto.getCategoria()+
+		"\n\nDADOS DOS CADASTROS" +
+		"\nNome: " + objCadastro.getPrimeiroNome()+
+		"\nSobrenome: "+ objCadastro.getSobreNome()+
+		"\nEmail: " + objCadastro.getEmail()
 		);
 		
 	}
