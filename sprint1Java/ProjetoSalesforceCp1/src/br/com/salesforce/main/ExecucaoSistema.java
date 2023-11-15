@@ -10,42 +10,57 @@ import br.com.salesforce.beans.Produto;
 
 public class ExecucaoSistema {
 
+	//Métodos Static
+	
+		static String texto(String j) {
+			return JOptionPane.showInputDialog(j);
+		}
+		
+		static int inteiro(String j) {
+			return Integer.parseInt(JOptionPane.showInputDialog(j));
+		}
+		
+		static double real (String j) {
+			return Double.parseDouble(JOptionPane.showInputDialog(j));
+		}
+	
+	
 	public static void main(String[] args) {
 		
 		//(String nome, String empresa, String dtCadastro)
 		Cliente objCliente = new Cliente(
-				JOptionPane.showInputDialog("Digite o nome"),
-				JOptionPane.showInputDialog("Digite o nome da empresa"),
-				JOptionPane.showInputDialog("Digite a data do cadastro em formato dd/mm/yyyy")
+				texto("Digite o nome"),
+				texto("Digite o nome da empresa"),
+				texto("Digite a data do cadastro em formato dd/mm/yyyy")
 				);
 		
 		//(String logradouro, int numero, String cep, String bairro, String cidade)
 		Endereco objEndereco = new Endereco (
-				JOptionPane.showInputDialog("Digite o logradouro"),
-				Integer.parseInt(JOptionPane.showInputDialog("Digite o número")),
-				JOptionPane.showInputDialog("Digite o cep"),
-				JOptionPane.showInputDialog("Digite o bairro"),
-				JOptionPane.showInputDialog("Digite a cidade")
+				texto("Digite o logradouro"),
+				inteiro("Digite o número"),
+				texto("Digite o cep"),
+				texto("Digite o bairro"),
+				texto("Digite a cidade")
 				);
 		objCliente.setEndereco(objEndereco);
 		
 		//(String nomeContato, String email, String numeroTelefone, String instagram)
 		Contato objContato = new Contato (
-				JOptionPane.showInputDialog("Digite o nome de  contato"),
-				JOptionPane.showInputDialog("Digite o email"),
-				JOptionPane.showInputDialog("Digite um número de telefone para contato"),
-				JOptionPane.showInputDialog("Digite o instagram comercial")
+				texto("Digite o nome de  contato"),
+				texto("Digite o email"),
+				texto("Digite um número de telefone para contato"),
+				texto("Digite o instagram comercial")
 				);
 		objCliente.setContato(objContato);
 		
 		//(String nomeCampanha, String dataInicio, String dataFim, double orçamento,
 		//String objetivoCampanha)
 		CampanhaMarketing objCampanhaMarketing = new CampanhaMarketing(
-				JOptionPane.showInputDialog("Digite o nome da Campanha"),
-				JOptionPane.showInputDialog("Digite a data de inicio da campanha (dd/mm/yyyy)"),
-				JOptionPane.showInputDialog("Digite a data de fim da campanha (dd/mm/yyyy)"),
-				Double.parseDouble(JOptionPane.showInputDialog("Digite o valor do orçamento da campanha")),
-				JOptionPane.showInputDialog("Digite o objetivo da campanha"));
+				texto("Digite o nome da Campanha"),
+				texto("Digite a data de inicio da campanha (dd/mm/yyyy)"),
+				texto("Digite a data de fim da campanha (dd/mm/yyyy)"),
+				real("Digite o valor do orçamento da campanha"),
+				texto("Digite o objetivo da campanha"));
 		
 		//(String nomeProduto, int idProduto, String descricao, double preco, String categoria)
 		Produto objProduto = new Produto(
