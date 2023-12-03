@@ -57,7 +57,6 @@ As informações impressas incluem o primeiro nome, sobrenome, ID do usuário, e
 ![Saída de dados](./assets/ss2-java.png)
 
 ## Diagrama de Classes:
-
 ![Astah](./assets/astah-ss.png)
 
 ## Desenvolvedores:
